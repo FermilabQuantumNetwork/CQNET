@@ -2,6 +2,48 @@
 Compilation of tips, notes, and useful commands for setting up and running the code from CQNET.
 
 
+## Github
+### Useful commands
+* Check status of local repo: `git status`
+* Switch branch: `git checkout <branch>`
+* Store local changes: `git stash`
+* Download files from branch called <branch> of github repo: `git pull origin <branch>`
+* Add everything from local repo: `git add .`
+* Commit with message "...": `git commit -m "..."``
+* Add + commit with message "...": `git commit -a -m "..."``
+* Upload commits from local repo to github repo: `git push`
+
+### Tips
+* If you forgot to pull before making local changes, you can save local changes, pull,
+then revert to local changes by doing:
+```
+git stash
+git pull origin <branch>
+git stash pop
+```
+* Suggested order of commands to push local repo to github repo:
+```
+git status
+git checkout <branch> //if necessary
+git stash //to be safe
+git pull //makes local repo same as github repo
+git stash pop //updates the pulled repo with stashed changes
+git add .
+git commit -m "<Explanation of changes>"
+git push
+```
+
+* If you get something like `warning: LF will be replaced by CRLF in <filename>.` in the terminal,
+it's due to incompatible end of line specifications from different OS e.g. if uploaded code run on Linux
+from a Windows computer or vice versa.
+  - Unix: End of line represented with line feed (LF)
+    - When you get code from git that was uploaded from a unix system they will only have an LF
+    - Tell git to convert LF endings into CRLF when you checkout code: `git config --global core.autocrlf true`
+  - Windows: End of line represented with carriage return (CR) and a line feed (LF) thus (CRLF)
+    - When upload from windows, converts LF to CRLF
+    - Tell git to convert CRLF to LF on commit but not the other way around: `git config --global core.autocrlf input`
+
+
 ## Python
 ### Useful commands
 To install python packages, use:
