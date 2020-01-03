@@ -1,6 +1,8 @@
 # CQNET
 Compilation of tips, notes, and useful commands for setting up and running the code from CQNET.
 
+## General Comments
+* If the code doesn't run or asks for permission, you may need to run the script as root.
 
 ## Github
 ### Useful commands
