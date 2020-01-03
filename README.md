@@ -1,5 +1,5 @@
 # CQNET
-Compilation of tips, notes, and useful commands
+Compilation of tips, notes, and useful commands for setting up and running the code from CQNET.
 
 
 ## Python
