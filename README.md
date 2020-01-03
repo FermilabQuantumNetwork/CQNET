@@ -9,8 +9,8 @@ Compilation of tips, notes, and useful commands for setting up and running the c
 * Store local changes: `git stash`
 * Download files from branch called <branch> of github repo: `git pull origin <branch>`
 * Add everything from local repo: `git add .`
-* Commit with message "...": `git commit -m "..."``
-* Add + commit with message "...": `git commit -a -m "..."``
+* Commit with message <...>: `git commit -m <...>`
+* Add + commit with message <...>: `git commit -a -m "<...>"`
 * Upload commits from local repo to github repo: `git push`
 
 ### Tips
@@ -38,10 +38,12 @@ it's due to incompatible end of line specifications from different OS e.g. if up
 from a Windows computer or vice versa.
   - Unix: End of line represented with line feed (LF)
     - When you get code from git that was uploaded from a unix system they will only have an LF
-    - Tell git to convert LF endings into CRLF when you checkout code: `git config --global core.autocrlf true`
+    - Command to tell git to convert LF endings into CRLF
+    when you checkout code: `git config --global core.autocrlf true`
   - Windows: End of line represented with carriage return (CR) and a line feed (LF) thus (CRLF)
     - When upload from windows, converts LF to CRLF
-    - Tell git to convert CRLF to LF on commit but not the other way around: `git config --global core.autocrlf input`
+    - Command to tell git to convert CRLF to LF on commit,
+    but not the other way around: `git config --global core.autocrlf input`
 
 
 ## Python
