@@ -18,11 +18,11 @@ Compilation of tips, notes, and useful commands for setting up and running the c
 ### Tips
 * If you forgot to pull before making local changes, you can save local changes, pull,
 then revert to local changes by doing:
-```
-git stash
-git pull origin <branch>
-git stash pop
-```
+	```
+	git stash
+	git pull origin <branch>
+	git stash pop
+	```
 * Suggested order of commands to push local repo to github repo:
 	```
 	git status
@@ -54,13 +54,14 @@ from a Windows computer or vice versa.
 * To install python packages on Linux terminal, use:
 	- `python -m pip install --user <package1> <package2> ...`
 	- `python3 -m pip install --user <package1> <package2> ...`
+	- `sudo yum install <package>`
 
 * To build python software on RHEL terminal:
-```
+	```
 	cd /usr/src/Python-3.7.3
 	./configure --enable optimizations
 	make altinstall
-```
+	```
 
 #### Windows
 * To run different versions of python on Windows cmd, use:
@@ -167,3 +168,7 @@ alter table <table name> rename column <old name> to <new name>;
 ALTER TABLE table ADD [COLUMN] <column_name_1> <column_1_definition> [FIRST|AFTER existing_column];
 ```
 The square bracket terms are optional.
+
+## Other
+### SCP
+* To transfer files over computers in network using Linux terminal: `scp -r ./<filename> <username>@<ip address>:<folder path>`
