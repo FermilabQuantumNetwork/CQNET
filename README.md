@@ -75,16 +75,12 @@ from a Windows computer or vice versa.
 * If you are on Centos 7, install tkinter to use graphical interface for viewing matplotlib plots:
 `sudo yum install python3-tkinter`
 * For plotting, use this to adjust spacing between subplots: `matplotlib.pyplot.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, hspace=None)`
-	``` left = 0.125  # the left side of the subplots of the figure
-	right = 0.9   # the right side of the subplots of the figure
-	bottom = 0.1  # the bottom of the subplots of the figure
-	top = 0.9     # the top of the subplots of the figure
-	wspace = 0.2  # the amount of width reserved for space between subplots,
-		      # expressed as a fraction of the average axis width
-	hspace = 0.2  # the amount of height reserved for space between subplots,
-		      # expressed as a fraction of the average axis height
-
-	```
+	- `left = 0.125` (the left side of the subplots of the figure)
+	- `right = 0.9`  (the right side of the subplots of the figure)
+	- `bottom = 0.1` (the bottom of the subplots of the figure)
+	- `top = 0.9` (the top of the subplots of the figure)
+	- `wspace = 0.2` (the amount of width reserved for space between subplots, expressed as a fraction of the averge axis width)
+	- `hspace = 0.2` (the amount of height reserved for space between subplots, expressed as a fraction of the average axis height)
 
 ## Mysql
 ### Useful commands
