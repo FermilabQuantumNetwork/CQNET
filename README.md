@@ -178,3 +178,5 @@ The square bracket terms are optional.
 ## Other
 ### SCP
 * To transfer files over computers in network using Linux terminal: `scp -r ./<filename> <username>@<ip address>:<folder path>`
+### Serial
+* To check the serial ports in Linux terminal: `python3 -m serial.tools.list_ports`
