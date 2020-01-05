@@ -24,16 +24,16 @@ git pull origin <branch>
 git stash pop
 ```
 * Suggested order of commands to push local repo to github repo:
-```
-git status
-git checkout <branch> //if necessary
-git stash //to be safe
-git pull //makes local repo same as github repo
-git stash pop //updates the pulled repo with stashed changes
-git add .
-git commit -m "<Explanation of changes>"
-git push
-```
+	```
+	git status
+	git checkout <branch> //if necessary
+	git stash //to be safe
+	git pull //makes local repo same as github repo
+	git stash pop //updates the pulled repo with stashed changes
+	git add .
+	git commit -m "<Explanation of changes>"
+	git push
+	```
 
 * If you get something like `warning: LF will be replaced by CRLF in <filename>.` in the terminal,
 it's due to incompatible end of line specifications from different OS e.g. if uploaded code run on Linux
