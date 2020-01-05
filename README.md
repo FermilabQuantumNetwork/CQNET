@@ -50,10 +50,25 @@ from a Windows computer or vice versa.
 
 ## Python
 ### Useful commands
-To install python packages, use:
-* `python -m pip install --user <package1> <package2> ...`
-* `python3 -m pip install --user <package1> <package2> ...`
+#### Linux
+* To install python packages on Linux terminal, use:
+	- `python -m pip install --user <package1> <package2> ...`
+	- `python3 -m pip install --user <package1> <package2> ...`
 
+* To build python software on RHEL terminal:
+```
+	cd /usr/src/Python-3.7.3
+	./configure --enable optimizations
+	make altinstall
+```
+
+#### Windows
+* To run different versions of python on Windows cmd, use:
+	* `py -2` (python2)
+	* `py -3` (python3)
+
+* To install python packages on Windows, use:
+	- `py -3 -m pip install <package name>` (python3)
 
 ### Tips
 * If you are on Centos 7, install tkinter to use graphical interface for viewing matplotlib plots:
