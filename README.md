@@ -53,6 +53,10 @@ from a Windows computer or vice versa.
 #### Linux
 * To install python 3.6 on CentOS7: https://linuxhint.com/install_python3_centos7/
 * To install python 3.7 on CentOS7: https://tecadmin.net/install-python-3-7-on-centos/
+* To install python 3.8 on CentOS7: https://tecadmin.net/install-python-3-8-centos/
+
+* To change default version of python: `alias python3=$(which python3.x)` where "python3.x" is the version you want as default
+	- Now when type `python3` in terminal will get "python3.x" to run
 
 * To install python packages on Linux terminal, use:
 	- `python -m pip install --user <package1> <package2> ...`
