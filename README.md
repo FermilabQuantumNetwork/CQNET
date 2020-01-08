@@ -51,6 +51,7 @@ from a Windows computer or vice versa.
 ## Python
 ### Useful commands
 #### Linux
+* To instal python on CentOS7: https://linuxhint.com/install_python3_centos7/
 * To install python packages on Linux terminal, use:
 	- `python -m pip install --user <package1> <package2> ...`
 	- `python3 -m pip install --user <package1> <package2> ...`
