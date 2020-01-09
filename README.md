@@ -90,6 +90,7 @@ from a Windows computer or vice versa.
 	- `hspace = 0.2` (the amount of height reserved for space between subplots, expressed as a fraction of the average axis height)
 
 ## Mysql
+To install mysql: https://www.hostinger.com/tutorials/how-to-install-mysql-on-centos-7
 ### Useful commands
 
 Angle bracket terms should be replaced with your inputs.
